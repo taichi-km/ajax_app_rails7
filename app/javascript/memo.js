@@ -3,6 +3,7 @@ function post (){
   form.addEventListener("submit", (e) => {
   // 第一引数にsubmitイベント、第二引数に実行したい処理
     e.preventDefault();
+    // 「投稿ボタンをクリックした」というイベントを無効化し、勝手にリクエストが送信されるのを防ぐ
     const formData = new FormData(form);
     // フォームに入力された値をformDataに格納する
     const XHR = new XMLHttpRequest();
